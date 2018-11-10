@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" class="bg-green">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hovatovább-nap</title>
+  <link href="sandbox.css" rel="stylesheet">
+  <link href="../dist/css/drawer.css" rel="stylesheet">
+</head>
+<body class="drawer drawer--left drawer--navbarTopGutter">
+
+  <header class="drawer-navbar drawer-navbar--fixed" role="banner">
+    <div class="drawer-container">
+      <div class="drawer-navbar-header">
+        <a class="drawer-brand" href="./index.html">Műhely</a>
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+      </div>
+
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-menu-item" href="./top.html">Hamarosan kezdődő programok</a></li>
+          <li><a class="drawer-menu-item" href="./index.html">Vásár</a></li>
+          <li class="drawer-dropdown">
+            <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+              Műhely<span class="drawer-caret"></span>
+            </a>
+            <ul class="drawer-dropdown-menu">
+              <li><a class="drawer-dropdown-menu-item" href="./navbar-top.html">Zártkörű</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="./navbar-left.html">Nyitott</a></li>
+            </ul>
+          </li>
+          <li class="drawer-dropdown">
+            <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+              Fórum<span class="drawer-caret"></span>
+            </a>
+            <ul class="drawer-dropdown-menu">
+              <li><a class="drawer-dropdown-menu-item" href="./fixed-navbar-top.html">Zártkörű</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="./fixed-navbar-left.html">Nyitott</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="./fixed-navbar-right.html">Egyetemi bemutatkozók</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- content -->
+  <main role="main">
+    <section class="item">
+      <h1>Műhelyprogramok</h1>
+        <p>Pécsi SZC Angster József Szakgimnáziuma, Hauni Hungária Kft., Lakics Kft.<br>4. terem (fsz.)</p>
+        <p>Pécsi SZC Pollack Mihály Szakgimnáziuma, Dél-Dunántúli Építőipari Klaszter<br>3. terem (fsz.)</p>
+        <p>Pécsi SZC Simonyi Károly Szakgimnáziuma, Hajnalfény Szépségközpont, Z-Elektronika Kft.<br>2. terem (fsz.)</p>
+        <p>Pécsi SZC Zipernowsky Károly Műszaki Szakgimnáziuma, Dél-Dunántúli Építőipari Klaszter<br>3. terem (fsz.)</p>
+        <p>Pécsi SZC Pollack Mihály Szakgimnáziuma, Pécs-Baranyai Kereskedelmi és Iparkamara Információtechnológiai Bizottság, Faludi és Társa Kft., Print Copy Irodatechnikai Kft. <br>5. terem (fsz.)</p>
+        <p>Pécsi SZC Zsolnay Vilmos Szakgimnáziuma<br>Nyolczas Ipoly (fsz.)</p>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../dist/js/drawer.min.js" charset="utf-8"></script>
+  <script>
+    $(document).ready(function() {
+      $('.drawer').drawer();
+    });
+  </script>
+</body>
+</html>
