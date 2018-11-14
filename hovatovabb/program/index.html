@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-green">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>"Hovatovább?" nap</title>
+  <link href="sandbox.css" rel="stylesheet">
+  <link href="../dist/css/drawer.css" rel="stylesheet">
+</head>
+<body class="drawer drawer--left drawer--navbarTopGutter">
+
+  <header class="drawer-navbar drawer-navbar--fixed" role="banner">
+    <div class="drawer-container">
+      <div class="drawer-navbar-header">
+        <a class="drawer-brand" href="./index.html">Aktuális</a>
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+      </div>
+
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-menu-item" href="index.html">Hamarosan kezdődő programok</a></li>
+          <li><a class="drawer-menu-item" href="borze.html">Börze</a></li>
+          <li><a class="drawer-menu-item" href="muhely.html">Műhely</a></li>
+          <!--<li class="drawer-dropdown">
+            <a class="drawer-menu-item" data-target="#" href="muhely.html" data-toggle="dropdown" role="button" aria-expanded="false">
+              Műhely<span class="drawer-caret"></span>
+            </a>
+            <ul class="drawer-dropdown-menu">
+              <li><a class="drawer-dropdown-menu-item" href="./navbar-top.html">Zártkörű</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="./navbar-left.html">Nyitott</a></li>
+            </ul>
+          </li>-->
+          <li class="drawer-dropdown">
+            <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+              Fórum<span class="drawer-caret"></span>
+            </a>
+            <ul class="drawer-dropdown-menu">
+              <li><a class="drawer-dropdown-menu-item" href="./fixed-navbar-top.html">Zártkörű</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="./fixed-navbar-left.html">Nyitott</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="./fixed-navbar-right.html">Egyetemi bemutatkozók</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- content -->
+  <main role="main">
+    <section class="item">
+      <h1>Válassz a menüpontok közül!</h1>
+        <footer>
+            <img src="crnlg.png"><img src="logo1.png"><img src="oh.png">
+        
+        </footer>
+    </section>
+  </main>
+
+  <script src="jquery.min.js"></script><!--https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js-->
+  <script src="iscroll.js"></script><!--https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js-->
+  <script src="bootstrap.min.js"></script><!--https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js-->
+  <script src="../dist/js/drawer.min.js" charset="utf-8"></script>
+  <script>
+    $(document).ready(function() {
+      $('.drawer').drawer();
+    });
+  </script>
+
+</body>
+</html>
