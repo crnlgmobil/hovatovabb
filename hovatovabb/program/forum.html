@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="bg-green">
 <head>
@@ -9,19 +8,15 @@
   <link href="sandbox.css" rel="stylesheet">
   <link href="../dist/css/drawer.css" rel="stylesheet">
 </head>
-<body class="drawer drawer--left drawer--navbarTopGutter">
+<body class="drawer drawer--left" onload="$('.drawer').drawer('open');">
 
-  <header class="drawer-navbar drawer-navbar--fixed" role="banner">
-    <div class="drawer-container">
-      <div class="drawer-navbar-header">
-        <a class="drawer-brand">Fórum</a>
-        <button type="button" class="drawer-toggle drawer-hamburger">
-          <span class="sr-only">toggle navigation</span>
-          <span class="drawer-hamburger-icon"></span>
-        </button>
-      </div>
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">Fórum</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
 
-      <nav class="drawer-nav" role="navigation">
+    <nav class="drawer-nav" role="navigation">
         <ul class="drawer-menu">
           <li><a class="drawer-menu-item" href="index.html">Kezdőlap</a></li>
           <li><a class="drawer-menu-item" href="borze.html">Börze</a></li>
@@ -46,8 +41,6 @@
           </li>
         </ul>
       </nav>
-
-    </div>
   </header>
 
   <!-- content
