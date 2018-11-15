@@ -64,3 +64,13 @@ div.alul { width:100%; padding:20px; text-align: center; background-color:#23212
 table.c {margin:auto; border-spacing: 50px; width: 100%}
 
 img {margin:20px;}
+
+.row {
+    display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 10px;
+}
