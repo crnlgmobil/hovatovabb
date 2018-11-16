@@ -1,59 +1,60 @@
-<!DOCTYPE html>
+<!DOCUMENT html>
 <html lang="en" class="bg-green">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sandbox: Drawer Left with fixed navbar</title>
+  <title>"Hovatovább?" nap</title>
   <link href="sandbox.css" rel="stylesheet">
   <link href="../dist/css/drawer.css" rel="stylesheet">
 </head>
-<body class="drawer drawer--left drawer--navbarTopGutter">
+<body class="drawer drawer--left">
 
-  <header class="drawer-navbar drawer-navbar--fixed" role="banner">
-    <div class="drawer-container">
-      <div class="drawer-navbar-header">
-        <a class="drawer-brand" href="./index.html">Drawer</a>
-        <button type="button" class="drawer-toggle drawer-hamburger">
-          <span class="sr-only">toggle navigation</span>
-          <span class="drawer-hamburger-icon"></span>
-        </button>
-      </div>
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">Börze</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
 
-      <nav class="drawer-nav" role="navigation">
+    <nav class="drawer-nav" role="navigation">
         <ul class="drawer-menu">
-          <li><a class="drawer-menu-item" href="./top.html">Hamarosan kezdődő programok</a></li>
-          <li><a class="drawer-menu-item" href="./index.html">Vásár</a></li>
-          <li><a class="drawer-menu-item" href="muhely.html">Műhely</a></li>
-          <!--<li class="drawer-dropdown">
+          <li><a class="drawer-menu-item" href="index.html">Kezdőlap</a></li>
+          <li><a class="drawer-menu-item" href="borze.html">Börze</a></li>
+          <!--<li><a class="drawer-menu-item" href="muhely.html">Műhely</a></li>-->
+          <li class="drawer-dropdown">
             <a class="drawer-menu-item" data-target="#" href="muhely.html" data-toggle="dropdown" role="button" aria-expanded="false">
               Műhely<span class="drawer-caret"></span>
             </a>
             <ul class="drawer-dropdown-menu">
-              <li><a class="drawer-dropdown-menu-item" href="./navbar-top.html">Zártkörű</a></li>
-              <li><a class="drawer-dropdown-menu-item" href="./navbar-left.html">Nyitott</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="muhely.html#muhelyprogramok">Műhelyprogramok</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="muhely.html#kari_bemutatkozasok">PTE Kari bemutatkozások</a></li>
             </ul>
-          </li>-->
+          </li>
           <li class="drawer-dropdown">
             <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
               Fórum<span class="drawer-caret"></span>
             </a>
             <ul class="drawer-dropdown-menu">
-              <li><a class="drawer-dropdown-menu-item" href="./fixed-navbar-top.html">Zártkörű</a></li>
-              <li><a class="drawer-dropdown-menu-item" href="./fixed-navbar-left.html">Nyitott</a></li>
-              <li><a class="drawer-dropdown-menu-item" href="./fixed-navbar-right.html">Egyetemi bemutatkozók</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="forum.html#elso">Első rész</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="forum.html#masodik">Második rész</a></li>
             </ul>
           </li>
         </ul>
       </nav>
-
-    </div>
   </header>
-
   <!-- content -->
   <main role="main">
     <section class="item">
-      <h1>Drawer Left with fixed navbar</h1>
+        <h1>Börze</h1>
+        <img src="borze.jpg" alt="Talán nem elég jó az internetkapcsolat?" style="width: 100%;margin:0px;">
+        <div class="alul">
+
+    	    <img src="alul.png" style="width: 90%;text-align: center;">
+	    <!--<img src="oh.png" height=auto style="margin:30px">
+        <img src="crnlg1.png" height=auto style="margin:30px;">
+        <img src="logo1.png" height=auto style="margin:30px;">-->
+    		<h3> Powered by Informatika szakkör</h3>
+      </div>
     </section>
   </main>
 
@@ -66,6 +67,5 @@
       $('.drawer').drawer();
     });
   </script>
-
 </body>
 </html>
