@@ -8,11 +8,10 @@
   <link href="sandbox.css" rel="stylesheet">
   <link href="./dist/css/drawer.css" rel="stylesheet">
 </head>
-<body class="drawer drawer--left" onload="$('.drawer').drawer('open');
-                                          myFunction()
-                                          ">
+<body class="drawer drawer--left" onload="nyitCsuk();">
     <script>
-function myFunction() {
+function nyitCsuk() {
+    $('.drawer').drawer('open');
     setTimeout(function(){ $('.drawer').drawer('close'); }, 500);
 }
 </script>
