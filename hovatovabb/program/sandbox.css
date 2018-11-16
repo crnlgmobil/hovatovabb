@@ -3,8 +3,15 @@ body {
   margin: 0;
 }
 
-.item {
+/*.item {
   height: 2000px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  color: #fff;
+}*/
+.item {
+  height: auto;
   padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center;
@@ -58,8 +65,9 @@ table.b {width:100%; margin-bottom:100px; border-spacing: 15px;}
 td.a { color:black; text-align:left; border: 15px solid rgba(200,0,0,0); background-color: rgba(255,255,255,0.5);}
 .terem {font-style: italic;}
 
-div.alul { width:100%; padding:20px; text-align: center; background-color:#232121; color:white; height: 100%; border-top:4px solid white}
-table.c {margin:auto; border-spacing: 50px; width: 100%}
+/*div.alul { width:100%; padding:20px; text-align: center; background-color:#232121; color:white; height: 100%; border-top:4px solid white}
+table.c {margin:auto; border-spacing: 50px; width: 100%}*/
+div.alul { padding:20px; text-align: center; background-color:#232121; color:white; height: 100%; border-top:4px solid white}
 
 img {margin:20px;}
 
