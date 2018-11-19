@@ -1,0 +1,198 @@
+<!DOCUMENT html>
+<html lang="en" class="bg-green">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>"Hovatovább?" nap</title>
+  <link href="sandbox.css" rel="stylesheet">
+  <link href="./dist/css/drawer.css" rel="stylesheet">
+</head>
+<body class="drawer drawer--left" onload="nyitCsuk();">
+    <script>
+function nyitCsuk() {
+    $('.drawer').drawer('open');
+    setTimeout(function(){ $('.drawer').drawer('close'); }, 500);
+}
+</script>
+
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">Kezdőlap</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+
+    <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-menu-item" href="index.html">Kezdőlap</a></li>
+          <li><a class="drawer-menu-item" href="borze.html">Börze</a></li>
+          <!--<li><a class="drawer-menu-item" href="muhely.html">Műhely</a></li>-->
+          <li class="drawer-dropdown">
+            <a class="drawer-menu-item" data-target="#" href="muhely.html" data-toggle="dropdown" role="button" aria-expanded="false">
+              Műhely<span class="drawer-caret"></span>
+            </a>
+            <ul class="drawer-dropdown-menu">
+              <li><a class="drawer-dropdown-menu-item" href="muhely.html#muhelyprogramok">Műhelyprogramok</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="muhely.html#kari_bemutatkozasok">PTE Kari bemutatkozások</a></li>
+            </ul>
+          </li>
+          <li class="drawer-dropdown">
+            <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+              Fórum<span class="drawer-caret"></span>
+            </a>
+            <ul class="drawer-dropdown-menu">
+              <li><a class="drawer-dropdown-menu-item" href="forum.html#elso">Első rész</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="forum.html#masodik">Második rész</a></li>
+            </ul>
+          </li>
+          <li><a class="drawer-menu-item" href="hamarosan.html">Hamarosan kezdődik</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <!-- content -->
+<section class="item">
+
+    <h1 id = "cim1">AKTUÁLIS PROGRAM</h1>
+	<div id = "aktualis">
+		<div id = "tartalom">
+            
+			<div><h1>FÓRUM - Díszterem</h1></div>
+			<div><tr><td style="text-align:center;" class="a" colspan="2"><h3>Megnyitó - 11:00</h3></td></tr>
+                <tr><td class="a"><b>Bodáné Gálosi Márta igazgató</b> – Ciszterci Rend Nagy Lajos Gimnáziuma<br>
+                <b>Dr. Horváth Zita helyettes államtitkár</b> – EMMI Oktatásért Felelős Államtitkárság<br>
+                <b>Dr. Gloviczki Zoltán elnök</b> - Oktatási Hivatal<br>
+                <b>Rabb Szabolcs titkár</b> – Pécs-Baranyai Kereskedelmi és Iparkamara</td></tr></div>
+			<div><h2>Előadások</h2></div>
+    
+			<div><b>Visontai Kovách Dalma</b> irodavezető - PTE Karrieriroda<br>
+                <b>Pályaorientáció - 11:20</b><br><br></div>
+            <div><b>Bukta Péter</b> osztályvezető - OH Felsőoktatási Felvételi Főosztály Tájékoztatási Osztály<br>
+                <b>Ne ezen múljon: a felvételi és a pontszámítás alapvető tudnivalóiról<br>
+                A magyar állami ösztöndíjas képzésről - 11:35</b><br><br></div>
+			<div><b>Dr. Fazekas Kornél</b> – Diákhitel Központ Zrt.<br>
+                <b>Diákhitel információk - 11:55</b><br><br></div>
+            <div><b>Szalai Gréta</b> – PTE hallgató<br>
+                <b>„Mindenki pécsi akar lenni” – így készülj az egyetemre - 12:10</b><br><br></div>
+            <div><b>Metzger Tibor</b> főigazgató - Pécsi Szakképzési Centrum<br>
+                <b>Érettségire épülő szakképzések - 12:25</b><br><br></div>
+            <div><b>Piacsek László</b> osztályvezető - PBKIK<br>
+                <b>Indulj a jó irányba - 12:40</b><br><br></div>
+            <div><b>Visontai Kovách Dalma</b> irodavezető - PTE Karrieriroda<br>
+                <b>Pályaorientáció - 13:00</b><br><br></div>
+            <div><b>Bukta Péter</b> osztályvezető - OH Felsőoktatási Felvételi Főosztály Tájékoztatási Osztály<br>
+                <b>Ne ezen múljon: a felvételi és a pontszámítás alapvető tudnivalóiról<br>
+                A magyar állami ösztöndíjas képzésről - 13:15</b><br><br></div>
+			<div><b>Dr. Fazekas Kornél</b> – Diákhitel Központ Zrt.<br>
+                <b>Diákhitel információk - 13:35</b><br><br></div>
+            <div><b>Szalai Gréta</b> – PTE hallgató<br>
+                <b>„Mindenki pécsi akar lenni” – így készülj az egyetemre - 13:50</b><br><br></div>
+            <div><b>Metzger Tibor</b> főigazgató - Pécsi Szakképzési Centrum<br>
+                <b>Érettségire épülő szakképzések - 14:05</b><br><br></div>
+            <div><b>Piacsek László</b> osztályvezető - PBKIK<br>
+                <b>Indulj a jó irányba - 14:20</b><br><br></div>
+            
+    
+            <div><h1>Műhelyprogramok</h1></div>
+            <div><b>Cégek bemutatói</b><br>
+                <b>földszinti termek - 11:00-15:00</b><br><br></div>
+            <div><b>PTE Kari Bemutatkozó előadások</b><br>
+                <b>I. és II. emelet - 13:00-14:00</b><br><br></div>
+            <div><b>PTE Kari Bemutatkozó előadások</b><br>
+                <b>I. és II. emelet - 14:00-15:00</b><br><br></div>
+            
+    
+			
+			
+		</div>
+		<script>
+            
+			var l = document.querySelectorAll("#tartalom div");
+			
+			var kezdet = [];
+			var veg = [];
+			var most = new Date();       <!--aktuális időpont
+			//var nap = most.getDate();      //ha így, akkor a mostani napra aktualizálja a programokat (mintha ma lennének)
+			//var honap = most.getMonth();
+			//var ev = most.getFullYear();
+			var nap = 23;             //be lehet állítani egy kokrét időpontra (pl. 2018.3.26 --> Lajos-nap)
+			var honap = most.getMonth()
+			var ev = 2018;
+            //forum
+			kezdet[0] = new Date(ev, honap, nap, 0, 00);
+			veg[0] = (new Date(ev, honap, nap, 14, 20));
+			kezdet[1] = (new Date(ev, honap, nap, 11, 00));
+			veg[1] = (new Date(ev, honap, nap, 11, 20));
+			kezdet[2] = (new Date(ev, honap, nap, 0, 00));
+			veg[2] = (new Date(ev, honap, nap, 14, 20));
+
+			kezdet[3] = (new Date(ev, honap, nap, 11, 20));
+			veg[3] = (new Date(ev, honap, nap, 11, 35));
+			kezdet[4] = (new Date(ev, honap, nap, 11, 35));
+			veg[4] = (new Date(ev, honap, nap, 11, 55));
+			kezdet[5] = (new Date(ev, honap, nap, 11, 55));
+			veg[5] = (new Date(ev, honap, nap, 12, 10));
+            
+			kezdet[6] = new Date(ev, honap, nap, 12, 10);
+			veg[6] = (new Date(ev, honap, nap, 12, 25));
+			kezdet[7] = (new Date(ev, honap, nap, 12, 25));
+			veg[7] = (new Date(ev, honap, nap, 12, 40));
+			kezdet[8] = (new Date(ev, honap, nap, 12, 40));
+			veg[8] = (new Date(ev, honap, nap, 13, 00));
+			kezdet[9] = (new Date(ev, honap, nap, 13, 00));
+			veg[9] = (new Date(ev, honap, nap, 13, 15));
+			kezdet[10] = (new Date(ev, honap, nap, 13, 15));
+			veg[10] = (new Date(ev, honap, nap, 13, 35));
+			kezdet[11] = (new Date(ev, honap, nap, 13, 35));
+			veg[11] = (new Date(ev, honap, nap, 13, 50));
+			kezdet[12] = (new Date(ev, honap, nap, 13, 50));
+			veg[12] = (new Date(ev, honap, nap, 14, 05));
+			kezdet[13] = new Date(ev, honap, nap, 14, 05);
+			veg[13] = (new Date(ev, honap, nap, 14, 20));
+            kezdet[14] = new Date(ev, honap, nap, 14, 20);
+			veg[14] = (new Date(ev, honap, nap, 14, 40));
+            
+            
+            //muhely
+			kezdet[15] = (new Date(ev, honap, nap, 0, 00));
+			veg[15] = (new Date(ev, honap, nap, 15, 00));
+			kezdet[16] = (new Date(ev, honap, nap, 0, 00));
+			veg[16] = (new Date(ev, honap, nap, 15, 00));
+			kezdet[17] = (new Date(ev, honap, nap, 13, 00));
+			veg[17] = (new Date(ev, honap, nap, 14, 00));
+			kezdet[18] = (new Date(ev, honap, nap, 14, 00));
+			veg[18] = (new Date(ev, honap, nap, 15, 00));
+            
+			var i;
+            //most.setDate(nap);
+			//most.setHours(11);        //átállítom az órá, tesztelés miatt (10-kor sok minden van)
+			//window.alert(most);        //kiiratja a tesztidőt
+			for(i = 0; i <= 18; i++){
+				if (((Math.abs((kezdet[i].getHours()*60 + kezdet[i].getMinutes()) - (most.getHours()*60 + most.getMinutes())) < 90) && kezdet[i] > most) || ((kezdet[i].getHours() == 0) && veg[i] > most && kezdet[i].getDate() == most.getDate())){
+					l[i].style.display = "inline";
+                    //document.getElementById("cim1").innerHTML = ((Math.abs((kezdet[1].getHours()*60 + kezdet[1].getMinutes()) - (most.getHours()*60 + most.getMinutes())) < 90));
+                }
+                else {
+                    l[i].style.display = "none";
+                     }
+			}
+			
+		</script>
+	</div>
+    
+</section>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Bootstrap dropdown v4.0.0-alpha -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script> -->
+  <script src="./dist/js/drawer.min.js" charset="utf-8"></script>
+  <script>
+    $(document).ready(function() {
+      $('.drawer').drawer();
+    });
+  </script>
+        
+</body>
+</html>
