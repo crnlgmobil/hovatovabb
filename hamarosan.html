@@ -1,4 +1,4 @@
-<!DOCUMENT html>
+﻿<!DOCUMENT html>
 <html lang="en" class="bg-green">
 <head>
   <meta charset="utf-8">
@@ -8,14 +8,7 @@
   <link href="sandbox.css" rel="stylesheet">
   <link href="./dist/css/drawer.css" rel="stylesheet">
 </head>
-<body class="drawer drawer--left" onload="nyitCsuk();">
-    <script>
-function nyitCsuk() {
-    $('.drawer').drawer('open');
-    setTimeout(function(){ $('.drawer').drawer('close'); }, 500);
-}
-</script>
-
+<body class="drawer drawer--left">
   <header role="banner">
     <button type="button" class="drawer-toggle drawer-hamburger">
       <span class="sr-only">Kezdőlap</span>
@@ -168,9 +161,9 @@ function nyitCsuk() {
 			//most.setHours(11);        //átállítom az órá, tesztelés miatt (10-kor sok minden van)
 			//window.alert(most);        //kiiratja a tesztidőt
 			for(i = 0; i <= 18; i++){
-				if (((Math.abs((kezdet[i].getHours()*60 + kezdet[i].getMinutes()) - (most.getHours()*60 + most.getMinutes())) < 90) && kezdet[i] > most) || ((kezdet[i].getHours() == 0) && veg[i] > most && kezdet[i].getDate() == most.getDate())){
+				if (((Math.abs((kezdet[i].getHours()*60 + kezdet[i].getMinutes()) - (most.getHours()*60 + most.getMinutes())) < 90) && kezdet[i] > most && kezdet[i].getDate() == most.getDate()) || ((kezdet[i].getHours() == 0) && veg[i] > most && kezdet[i].getDate() == most.getDate())){
 					l[i].style.display = "inline";
-                    //document.getElementById("cim1").innerHTML = ((Math.abs((kezdet[1].getHours()*60 + kezdet[1].getMinutes()) - (most.getHours()*60 + most.getMinutes())) < 90));
+                    
                 }
                 else {
                     l[i].style.display = "none";
@@ -179,20 +172,27 @@ function nyitCsuk() {
 			
 		</script>
 	</div>
-    
+    <div class="alul">
+
+    	    <img src="alul.png" style="width: 90%;text-align: center;">
+	    <!--<img src="oh.png" height=auto style="margin:30px">
+        <img src="crnlg1.png" height=auto style="margin:30px;">
+        <img src="logo1.png" height=auto style="margin:30px;">-->
+    		<h3> Powered by Informatika szakkör</h3>
+      </div>
 </section>
- 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- Bootstrap dropdown v4.0.0-alpha -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script> -->
+
+  <script src="jquery.min.js"></script><!--https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js-->
+  <script src="iscroll.js"></script><!--https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js-->
+  <script src="bootstrap.min.js"></script><!--https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js-->
   <script src="./dist/js/drawer.min.js" charset="utf-8"></script>
   <script>
     $(document).ready(function() {
       $('.drawer').drawer();
     });
   </script>
-        
+    <script type="text/javascript" id="cookieinfo"
+	src="cookieinfo.min.js">
+</script>
 </body>
 </html>
