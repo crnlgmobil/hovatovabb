@@ -1,6 +1,6 @@
 body {
   font-family: 'Avenir Next', 'Helvetica Neue', sans-serif;
-  margin: 0;
+  margin: 0px;
   background-image: linear-gradient(to bottom right, #BFF089, #6FD6FF);
 }
 
@@ -74,6 +74,7 @@ div.alul {
     background-color: #232121;
     color:white;
     border-top:4px solid white;
+    position: absolute;
 }
 
 img {margin:20px;}
@@ -89,3 +90,8 @@ img {margin:20px;}
 }
 a {font-style:bold; color: black;}
 a:hover {color:white}
+
+.margin{
+    margin-left: 5px;
+    margin-right: 5px;
+}
