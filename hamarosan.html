@@ -54,9 +54,20 @@
   <!-- content --><img src="logo.png" style="width: 100px; float: right;vertical-align: top;">
 <section class="item">
     
-    <div class="margin"><h1 id = "cim1">AKTUÁLIS PROGRAM</h1>
-    <p>"Még nem jött el az én órám!"<br>
-    <i>Jn 2, 4</i></p>
+    <div class="margin">
+<h1 id = "cim1">AKTUÁLIS PROGRAM</h1>
+        <p id="noProg"></p>
+        <script>
+            var now = new Date();
+            var utso = new Date(2018, 10, 23, 15, 0);
+            var elso = new Date(2018, 10, 23, 9, 30);
+            if (now > utso){
+                document.getElementById("noProg").innerHTML = "Vége a programoknak";
+            }
+            else if (now < elso){
+                document.getElementById("noProg").innerHTML = "Még nem jött el az én órám!<br><i>Jn 2, 4</i>";
+            }
+        </script>
     </div><div id = "aktualis">
 		<div id = "tartalom">
             
